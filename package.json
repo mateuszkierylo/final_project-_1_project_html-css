@@ -2,6 +2,7 @@
   "name": "vanilla-app-template",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://mateuszkierylo.github.io/final_project-_1_project_html-css",
   "type": "module",
   "scripts": {
     "dev": "vite",
