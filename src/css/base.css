@@ -23,24 +23,39 @@
   --student-role-font-size: 12px;
   --mobile-privacy-policy-font-size: 12px;
 
-  --button-border-radius: 12px;
-
   --regular-line-height: 24px;
   --desktop-tablet-main-heading-line-height: 70px;
   --mobile-main-heading-line-height: 40px;
+  --desktop-tablet-section-line-height: 48px;
+  --desktop-tablet-button-line-height: 28px;
+  --benefits-card-paragraph-line-height: 20px;
+
+  --letter-spacing-bold-text: -0.02em;
+
+  --button-border-radius: 12px;
+  --mobile-card-border-radius: 16px;
+  --desktop-tablet-card-border-radius: 30px;
 
   --black-color: #121417;
+  --dark-green-color: #38ae5f;
   --green-color: #4dc274;
   --semi-green-color: #bee8cc;
   --light-green-color: #d4fde1;
   --gray-color: #f3f5f6;
   --white-color: #fff;
+  --white-half-transparent-color: #ffffff80;
 
   --green-linear-gradient: linear-gradient(
     84.6deg,
     var(--green-color) 2.25%,
-    var(--semi-green-color 131.25%)
+    var(--semi-green-color) 131.25%
   );
+
+  --transition-general-duration: 250ms;
+  --transition-general-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --transition-general: var(--transition-general-duration)
+    var(--transition-general-function);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -80,4 +95,18 @@ body {
   font-size: var(--mobile-button-font-size);
   font-weight: var(--bold-font-weight);
   padding: 14px 78px;
+  transition: background-color var(--transition-general);
+}
+
+.btn:hover {
+  background-color: var(--dark-green-color);
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: var(--desktop-tablet-button-font-size);
+    line-height: var(--desktop-tablet-button-line-height);
+    padding: 16px 64px;
+  }
 }
