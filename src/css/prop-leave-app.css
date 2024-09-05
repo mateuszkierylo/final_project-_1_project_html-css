@@ -39,24 +39,21 @@
   transition: transform var(--transition-general);
 }
 
+.prop-leave-app-card:hover::before,
+.prop-leave-app-card:hover::after {
+  transform: none;
+}
+
 .prop-leave-app-card::before {
   transform: rotate(-10deg);
   background-color: var(--light-green-color);
   border-radius: var(--mobile-card-border-radius);
 }
 
-.prop-leave-app-card:hover::before {
-  transform: none;
-}
-
 .prop-leave-app-card::after {
   transform: rotate(10deg);
   background-color: var(--white-half-transparent-color);
   border-radius: var(--mobile-card-border-radius);
-}
-
-.prop-leave-app-card:hover::after {
-  transform: none;
 }
 
 .prop-leave-app-card-content {
@@ -133,6 +130,11 @@
   .prop-leave-app-card {
     padding-block: 64px;
     padding-inline-start: 32px;
+    border-radius: var(--desktop-tablet-card-border-radius);
+  }
+
+  .prop-leave-app-card::before,
+  .prop-leave-app-card::after {
     border-radius: var(--desktop-tablet-card-border-radius);
   }
 
