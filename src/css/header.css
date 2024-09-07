@@ -77,21 +77,14 @@
         outline: 1px solid #1214171A;
         outline-offset: 8px;
         border-radius: 1px;
+        transition: fill var(--transition-general), outline-color var(--transition-general);
     }
     
-        .header-icon {
-        width: 28px;
-        height: 28px;
-        fill: var(--black-color);
-        outline: 1px solid #1214171A;
-        outline-offset: 8px;
-        border-radius: 2px;
-    }
     
     .header-icon:hover,
     .header-icon:active {
         fill: var(--green-color);
-        outline-color: var(--green-color);
+        outline-color:#4DC2741A;
     }
     
 }

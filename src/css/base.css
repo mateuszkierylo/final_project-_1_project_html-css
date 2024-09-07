@@ -92,6 +92,7 @@ body {
   cursor: pointer;
   border-radius: var(--button-border-radius);
   outline: none;
+  border: none;
   font-size: var(--mobile-button-font-size);
   font-weight: var(--bold-font-weight);
   padding: 14px 78px;
@@ -101,6 +102,7 @@ body {
 .btn:hover {
   background-color: var(--dark-green-color);
 }
+
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
