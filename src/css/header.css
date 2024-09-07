@@ -1,0 +1,97 @@
+/* Styles for Mobile devices and Tablet device*/
+
+.navbar {
+    background-color: #fff;
+    font-family: var(--primary-font-family);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.black-logo-text {
+    color: var(--black-color);
+    font-weight: var(--bold-font-weight);
+    font-size: var(--paragraph-title-font-size);
+    letter-spacing: var(--letter-spacing-bold-text);
+    line-height: 1.366;
+}
+
+.green-logo-text {
+    color: var(--green-color);
+    font-weight: var(--bold-font-weight);
+    font-size: var(--paragraph-title-font-size);
+    letter-spacing: var(--letter-spacing-bold-text);
+    line-height: 1.366;
+}
+
+.nav-links {
+    display: none;
+}
+
+.header-social-icons {
+     display: none;
+ }
+
+ 
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        color: var(--black-color);
+        font-weight: var(--semi-bold-font-weight);
+        font-size: var(--header-font-size);
+        line-height: 1.125;
+        }
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: var(--green-color);
+        bottom: -4px;
+        left: 0;
+        transition: var(--transition-general);
+    }
+    
+    .nav-link:hover::after {
+        width: 37px;
+    }
+    
+    .header-social-icons {
+        display: flex;
+        gap: 28px;
+        }
+    
+    .header-icon {
+        width: 28px;
+        height: 28px;
+        fill: var(--black-color);
+        outline: 1px solid #1214171A;
+        outline-offset: 8px;
+        border-radius: 1px;
+    }
+    
+        .header-icon {
+        width: 28px;
+        height: 28px;
+        fill: var(--black-color);
+        outline: 1px solid #1214171A;
+        outline-offset: 8px;
+        border-radius: 2px;
+    }
+    
+    .header-icon:hover,
+    .header-icon:active {
+        fill: var(--green-color);
+        outline-color: var(--green-color);
+    }
+    
+}
