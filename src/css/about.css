@@ -102,8 +102,8 @@
     background-color: var(--green-color);
 }
 
-.about-picture-tablet, .about-picture-desktop {
-    display: none;
+.about-picture-img {
+    display: block;
 }
 
 /* Styles for Tablet devices */
@@ -152,14 +152,6 @@
         height: 243px;
         border-radius: 30px;
     }
-
-    .about-picture-mobile{
-        display: none;
-    }
-
-    .about-picture-tablet {
-        display: block;
-    }
 }
 
 /* Styles for Desktop devices */
@@ -201,13 +193,5 @@
         max-width: 310px;
         height: 353px;
         border-radius: 30px;
-    }
-
-    .about-picture-mobile, .about-picture-tablet {
-        display: none;
-    }
-
-    .about-picture-desktop {
-        display: block;
     }
 }
