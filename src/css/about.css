@@ -131,7 +131,7 @@
         margin-top: 64px;
         gap: 32px;
     }
-
+  
     .about-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -156,6 +156,17 @@
         margin: 0 96px;
         padding: 0 87px;
     }
+
+    } 
+  }
+  
+  /* Styles for Desktop devices */
+  @media only screen and (min-width: 1280px) {
+    .about-card-container {
+        margin: 0 96px;
+        padding: 0 87px;
+        }
+
 
     .about-marker::after {
         top: 28px;
@@ -190,4 +201,4 @@
         height: 353px;
         border-radius: 30px;
     }
-}
+
