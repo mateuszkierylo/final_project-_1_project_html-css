@@ -63,7 +63,7 @@
    width: 100vw;
    height: 100vh;
   background-color: #2e2f4266;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -84,6 +84,7 @@
  
  .menu-container.is-open {
    transform: translateX(0);
+  display: flex;
  }
  
 .backdrop {
