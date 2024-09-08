@@ -14,7 +14,7 @@
 }
 
 .application-header {
-    font-size: var(--desktop-tablet-main-heading-font-size);
+    font-size: var(--desktop-tablet-section-font-size);
     line-height: var(--desktop-tablet-main-heading-line-height);
     font-weight: var(--bold-font-weight);
     color: var(--black-color);
@@ -39,10 +39,12 @@
 }
 
 .description {
-    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    font-size: var(--desktop-tablet-button-font-size);
+    width: 709px;
     color: #12141780;
-    line-height: var(--desktop-tablet-section-line-height);
+    line-height: 1.667;
     margin-top: 16px;
+    padding-bottom: 64px;
 }
 
 .form-container {
@@ -50,27 +52,6 @@
     background-color: var(--white-color);
     overflow: hidden;
     flex-direction: row;
-}
-
-.image-container {
-    position: relative;
-    width: 492px;
-    height: 578px;
-    background-image: url("../img/girl-learning-with-laptop.jpg");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: var(--desktop-tablet-card-border-radius);
-}
-
-@media only screen and (min-resolution: 192dpi) {
-    .image-container {
-        background-image: url('../img/girl-learning-with-laptop@2x.jpg');
-    }
 }
 
 .image-container2 {
@@ -82,21 +63,16 @@
     z-index: 2;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .overlay2 {
     background-color: var(--dark-green-color);
     margin-top: -20em;
-    min-height: 70%;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    background-color: var(--dark-green-color);
-    clip-path: ellipse(298px 268px at 50% 50%);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
 }
 
 .lesson-info {
@@ -119,8 +95,8 @@
 }
 
 .application-form {
-    padding: 40px;
-    width: 50%;
+    margin-left: 32px;
+    width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -132,6 +108,7 @@
     border: 1px solid var(--gray-color);
     border-radius: var(--button-border-radius);
     font-size: var(--mobile-font-size);
+    margin-bottom: 18px;
 }
 
 .application-form textarea {
@@ -139,29 +116,34 @@
     resize: none;
 }
 
+.formular-border {
+    width: 100%;
+    height: 56px;
+    border: 1px solid var(--gray-color);
+    border-radius: 12px; 
+    outline: none;
+    }
+
+.formular-border:focus {
+    border-color: var(--dark-green-color);
+    outline: none; 
+    }
+
 .teacher-options {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     font-size: var(--paragraph-title-font-size);
     font-weight: var(--semi-bold-font-weight);
 }
 
 .teacher-options label {
-    margin-right: 10px;
+    margin: 16px;
 }
 
-.application-form button {
-    padding: 14px 78px;
-    background-color: var(--green-color);
-    color: var(--white-color);
-    border: none;
-    border-radius: var(--button-border-radius);
-    font-size: var(--desktop-tablet-button-font-size);
-    font-weight: var(--bold-font-weight);
-    cursor: pointer;
-    transition: background-color var(--transition-general);
-}
-
-.application-form button:hover {
-    background-color: var(--dark-green-color);
+.choose-teacher{
+    font-size: var(--paragraph-title-font-size);
+    font-weight: var(--semi-bold-font-weight);
+    line-height: 1.2;
+    color: var(--black-color);
+    margin-bottom: 16px;
 }
 
