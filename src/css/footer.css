@@ -1,1 +1,137 @@
+/* Styles for Mobile devices */
 
+.footer {
+  background-color: var(--black-color);
+}
+
+.footer-content {
+  color: var(--white-color);
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.white-logo-text {
+  color: var(--white-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--paragraph-title-font-size);
+  letter-spacing: var(--letter-spacing-bold-text);
+  line-height: 1.366;
+}
+
+.green-logo-text {
+  color: var(--green-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--paragraph-title-font-size);
+  letter-spacing: var(--letter-spacing-bold-text);
+  line-height: 1.366;
+}
+
+.general-info {
+  padding-top: 20px;
+}
+
+.contact-info {
+  padding-top: 20px;
+}
+
+.contact-info p {
+  color: var(--white-color);
+  opacity: 0.6;
+}
+
+.contact-info p:not(:first-child) {
+  padding-top: 16px;
+}
+
+.nav-links-footer {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--white-color);
+  font-weight: var(--semi-bold-font-weight);
+  line-height: 18px;
+}
+
+.header-social-icons-footer {
+  display: flex;
+  gap: 28px;
+  padding-top: 48px;
+  padding-left: 8px;
+}
+
+.header-icon-footer {
+  width: 26px;
+  height: 26px;
+  fill: var(--white-color);
+  outline: 1px solid #ffffff10;
+  outline-offset: 8px;
+  border-radius: 1px;
+  transition: fill var(--transition-general),
+    outline-color var(--transition-general);
+}
+
+.header-icon-footer:hover,
+.header-icon-footer:active {
+  fill: var(--green-color);
+  outline-color: #4dc2741a;
+}
+
+hr {
+  display: block;
+  color: #ffffff;
+  opacity: 0.1;
+  margin-top: 40px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.footer-text {
+  color: var(--white-color);
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy {
+  display: flex;
+  margin-top: 14px;
+  gap: 18px;
+}
+
+/* Styles for Tablet devices */
+@media (min-width: 768px) {
+  .general-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links-footer {
+    padding-top: 0px;
+  }
+
+  .header-social-icons-footer {
+    padding-top: 8px;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .privacy-policy {
+    margin-top: 0px;
+  }
+
+  .footer-text {
+    margin-bottom: 16px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .footer-text {
+    margin-bottom: 23px;
+  }
+}
