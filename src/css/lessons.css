@@ -87,7 +87,7 @@ body {
 
 .lessons-pricing-card {
     background-color: var(--white-color);
-    border: 2px solid var(--gray-color);
+    border: 2px solid var(--green-color);
     border-radius: var(--desktop-tablet-card-border-radius);
     padding: 30px;
     width: 280px;
