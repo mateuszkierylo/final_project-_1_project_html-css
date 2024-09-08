@@ -1,0 +1,297 @@
+/* General styles for all screen sizes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font-family);
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--primary-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: var(--mobile-font-size);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    line-height: var(--regular-line-height);
+}
+
+.lessons-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.lessons-heading {
+    font-family: var(--primary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.lessons-underline {
+    position: relative;
+}
+
+.lessons-underline::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 35px;
+    right: -2px;
+    width: 150px;
+    height: 12px;
+    border-radius: 8px;
+    background-color: #BEE8CC;
+    z-index: -1;
+}
+
+.lessons-paragraph {
+    font-family: var(--primary-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #12141780;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.lessons-pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lessons-pricing-card {
+    background-color: var(--white-color);
+    border: 2px solid var(--gray-color);
+    border-radius: var(--desktop-tablet-card-border-radius);
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lessons-pricing-card h3,
+.lessons-pricing-card p {
+    margin-bottom: 20px;
+}
+
+.lessons-pricing-text {
+    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    line-height: var(--benefits-card-paragraph-line-height);
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+
+.lessons-standard .lessons-pricing-text {
+    color: var(--white-color);
+    /* Text white only in standard card */
+}
+
+.lessons-subheading {
+    font-family: var(--primary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.lessons-standard .lessons-subheading {
+    color: var(--white-color);
+}
+
+.lessons-price {
+    font-family: var(--primary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 15px;
+}
+
+.lessons-standard .lessons-price {
+    color: var(--white-color);
+}
+
+/* Special adjustments for the standard card */
+.lessons-standard {
+    border: 2px solid var(--green-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+/* Style for the button in the standard card */
+.lessons-standard .lessons-btn {
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.lessons-standard .lessons-btn:hover {
+    background-color: var(--dark-green-color);
+    border: 2px solid var(--white-color);
+}
+
+.lessons-btn {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    cursor: pointer;
+    border-radius: var(--button-border-radius);
+    outline: none;
+    border: none;
+    font-size: var(--mobile-button-font-size);
+    font-weight: var(--bold-font-weight);
+    padding: 14px 20px;
+    white-space: nowrap;
+    transition: background-color var(--transition-general);
+    width: 100%;
+    max-width: 250px;
+}
+
+.lessons-btn:hover {
+    background-color: var(--dark-green-color);
+}
+
+/* Specific styles for different pricing options */
+.lessons-practice {
+    border-color: var(--dark-green-color);
+}
+
+.lessons-standard {
+    border-color: var(--green-color);
+    background-color: var(--dark-green-color);
+}
+
+.lessons-individual {
+    border-color: var(--dark-green-color);
+}
+
+/* Styles for Desktop devices (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    .lessons-pricing-options {
+        gap: 40px;
+    }
+
+    .lessons-pricing-card {
+        width: 320px;
+        padding: 40px;
+        /* More padding for desktop */
+    }
+
+    .lessons-heading {
+        font-size: 40px;
+    }
+
+    .lessons-paragraph {
+        font-size: 18px;
+        line-height: 1.666;
+        letter-spacing: 0.08em;
+        max-width: 700px;
+    }
+
+    .lessons-section {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+/* Tablet-specific styles (between 768px and 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .lessons-pricing-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .lessons-pricing-card {
+        width: 280px;
+        padding: 30px;
+    }
+
+    .lessons-pricing-options .lessons-practice {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .lessons-pricing-options .lessons-standard {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .lessons-pricing-options .lessons-individual {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .lessons-heading {
+        font-size: 36px;
+    }
+
+    .lessons-paragraph {
+        font-size: var(--desktop-tablet-section-paragraph-font-size);
+        max-width: 600px;
+    }
+
+    .lessons-section {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+/* Mobile-specific styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .lessons-pricing-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lessons-pricing-card {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 15px;
+        padding: 35px;
+        /* Increase padding for mobile */
+        margin: 20px;
+        /* Increase margin for spacing */
+    }
+
+    .lessons-heading {
+        font-size: 32px;
+        line-height: var(--mobile-main-heading-line-height);
+    }
+
+    .lessons-paragraph {
+        font-size: var(--mobile-paragraph-font-size);
+        max-width: 500px;
+    }
+
+    .lessons-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: var(--mobile-button-font-size);
+    }
+}
