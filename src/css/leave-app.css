@@ -1,149 +1,178 @@
 .application-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--white-color);
 }
 
-.content-container {
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+.application-heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .application-header {
-    font-size: var(--desktop-tablet-section-font-size);
-    line-height: var(--desktop-tablet-main-heading-line-height);
-    font-weight: var(--bold-font-weight);
-    color: var(--black-color);
+  font-family: var(--primary-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--mobile-section-font-size);
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
 }
 
 .application-marker {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 }
 
 .application-marker::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0.4em;
-    background-color: #BEE8CC;
-    z-index: -1;
-    border-radius: 8px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.4em;
+  background-color: #bee8cc;
+  z-index: -1;
+  border-radius: 8px;
 }
 
-.description {
-    font-size: var(--desktop-tablet-button-font-size);
-    width: 709px;
-    color: #12141780;
-    line-height: 1.667;
-    margin-top: 16px;
-    padding-bottom: 64px;
+.application-heading-description {
+  font-size: var(--desktop-tablet-button-font-size);
+  color: #12141780;
+  line-height: 1.667;
+  margin: 0 auto;
 }
 
-.form-container {
-    display: flex;
-    background-color: var(--white-color);
-    overflow: hidden;
-    flex-direction: row;
+.application-form-container {
+  display: flex;
+  background-color: var(--white-color);
+  overflow: hidden;
+  flex-direction: row;
 }
 
-.image-container2 {
-    width: 492px;
-    height: 578px;
+.application-image-container {
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: var(--desktop-tablet-card-border-radius);
+  overflow: hidden;
+  max-width: 492px;
+  display: none;
 }
 
-.image-container2 img {
-    z-index: 2;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+.application-image-container .application-image {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
-.overlay2 {
-    background-color: var(--dark-green-color);
-    margin-top: -20em;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    
-}
-
-.lesson-info {
-    text-align: center;
-    z-index: 1;
-}
-
-.lesson-info h2 {
-    font-size: var(--desktop-tablet-section-font-size);
-    color: #FFFFFFB2;
-    font-weight: var(--bold-font-weight);
-    margin-bottom: 8px;
-    padding-top: 7.7em;
-}
-
-.lesson-info p {
-    font-size: var(--desktop-tablet-card-paragraph-font-size);
-    line-height: 1.5;
-    color: #FFFFFFB2;
+.application-image-container .image-container-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px 40px;
 }
 
 .application-form {
-    margin-left: 32px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .application-form input,
 .application-form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid var(--gray-color);
-    border-radius: var(--button-border-radius);
-    font-size: var(--mobile-font-size);
-    margin-bottom: 18px;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+  border-radius: var(--button-border-radius);
+  font-size: var(--mobile-font-size);
 }
 
 .application-form textarea {
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 
 .formular-border {
-    width: 100%;
-    height: 56px;
-    border: 1px solid var(--gray-color);
-    border-radius: 12px; 
-    outline: none;
-    }
+  width: 100%;
+  height: 56px;
+  border: 1px solid var(--gray-color);
+  border-radius: 12px;
+  outline: none;
+}
 
 .formular-border:focus {
-    border-color: var(--dark-green-color);
-    outline: none; 
-    }
+  border-color: var(--dark-green-color);
+  outline: none;
+}
 
 .teacher-options {
-    margin-bottom: 32px;
-    font-size: var(--paragraph-title-font-size);
-    font-weight: var(--semi-bold-font-weight);
+  margin-bottom: 32px;
+  font-size: var(--paragraph-title-font-size);
+  font-weight: var(--semi-bold-font-weight);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.teacher-options label {
-    margin: 16px;
+.teacher-options input[type='radio'] {
+  accent-color: green;
+  width: 20px;
+  height: 20px;
 }
 
-.choose-teacher{
-    font-size: var(--paragraph-title-font-size);
-    font-weight: var(--semi-bold-font-weight);
-    line-height: 1.2;
-    color: var(--black-color);
+.choose-teacher {
+  font-size: var(--paragraph-title-font-size);
+  font-weight: var(--semi-bold-font-weight);
+  line-height: 1.2;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .application-heading-container {
+    margin-bottom: 64px;
+  }
+
+  .application-header {
     margin-bottom: 16px;
+  }
+
+  .application-heading-description {
+    width: 586px;
+  }
+
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 102px;
+  }
+
+  .teacher-options {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .teacher-options input[type='radio'] {
+    width: 24px;
+    height: 24px;
+  }
 }
 
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .application-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .application-heading-description {
+    width: 709px;
+  }
+}
