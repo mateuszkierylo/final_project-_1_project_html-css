@@ -1,0 +1,131 @@
+.application-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--white-color);
+}
+
+.content-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-header {
+    font-size: var(--desktop-tablet-main-heading-font-size);
+    line-height: var(--desktop-tablet-main-heading-line-height);
+    font-weight: var(--bold-font-weight);
+    color: var(--black-color);
+}
+
+.application-marker {
+    position: relative;
+}
+
+.application-marker::after {
+    content: "";
+    position: absolute;
+    display: block;
+    color: red;
+    top: 29px;
+    right: -2px;
+    width: 41px;
+    height: 12px;
+    border-radius: 8px;
+    background-color: #BEE8CC;
+    z-index: -1;
+}
+
+.description {
+    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    color: var(--black-color);
+    line-height: var(--desktop-tablet-section-line-height);
+    margin-top: 10px;
+}
+
+.form-container {
+    display: flex;
+    background-color: var(--white-color);
+    border-radius: var(--desktop-tablet-card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 50%;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--light-green-color);
+}
+
+.lesson-info {
+    background-color: var(--white-half-transparent-color);
+    padding: 20px;
+    border-radius: var(--mobile-card-border-radius);
+    text-align: center;
+}
+
+.lesson-info h2 {
+    font-size: var(--lesson-price-font-size);
+    color: var(--dark-green-color);
+    font-weight: var(--bold-font-weight);
+    margin-bottom: 10px;
+}
+
+.lesson-info p {
+    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    color: var(--black-color);
+}
+
+.application-form {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form input,
+.application-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: var(--button-border-radius);
+    font-size: var(--mobile-font-size);
+}
+
+.application-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.teacher-options {
+    margin-bottom: 20px;
+    font-size: var(--paragraph-title-font-size);
+    font-weight: var(--semi-bold-font-weight);
+}
+
+.teacher-options label {
+    margin-right: 10px;
+}
+
+.application-form button {
+    padding: 14px 78px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--button-border-radius);
+    font-size: var(--desktop-tablet-button-font-size);
+    font-weight: var(--bold-font-weight);
+    cursor: pointer;
+    transition: background-color var(--transition-general);
+}
+
+.application-form button:hover {
+    background-color: var(--dark-green-color);
+}
