@@ -1,0 +1,151 @@
+.application-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--white-color);
+}
+
+.content-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-header {
+    font-size: var(--desktop-tablet-main-heading-font-size);
+    line-height: var(--desktop-tablet-main-heading-line-height);
+    font-weight: var(--bold-font-weight);
+    color: var(--black-color);
+    
+}
+
+.application-marker {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.application-marker::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.4em;
+    background-color: #BEE8CC;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.description {
+    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    color: #12141780;
+    line-height: var(--desktop-tablet-section-line-height);
+    margin-top: 16px;
+}
+
+.form-container {
+    display: flex;
+    background-color: var(--white-color);
+    
+    overflow: hidden;
+    
+}
+
+.image-container {
+    position: relative;
+    width: 492px;
+    height: 578px;
+    background-image: url("../img/girl-learning-with-laptop.jpg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: var(--desktop-tablet-card-border-radius);
+}
+
+@media only screen and (min-resolution: 192dpi) {
+    .image-container {
+        background-image: url('../img/girl-learning-with-laptop@2x.jpg');
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--dark-green-color);
+    clip-path: ellipse(298px 268px at 50% 50%);
+
+}
+
+.lesson-info {
+    width: 452px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.lesson-info h2 {
+    font-size: var(--desktop-tablet-section-font-size);
+    color: #FFFFFFB2;
+    font-weight: var(--bold-font-weight);
+    margin-bottom: 8px;
+}
+
+.lesson-info p {
+    font-size: var(--desktop-tablet-card-paragraph-font-size);
+    line-height: 1.5;
+    color: #FFFFFFB2;
+}
+
+.application-form {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form input,
+.application-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: var(--button-border-radius);
+    font-size: var(--mobile-font-size);
+}
+
+.application-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.teacher-options {
+    margin-bottom: 20px;
+    font-size: var(--paragraph-title-font-size);
+    font-weight: var(--semi-bold-font-weight);
+}
+
+.teacher-options label {
+    margin-right: 10px;
+}
+
+.application-form button {
+    padding: 14px 78px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--button-border-radius);
+    font-size: var(--desktop-tablet-button-font-size);
+    font-weight: var(--bold-font-weight);
+    cursor: pointer;
+    transition: background-color var(--transition-general);
+}
+
+.application-form button:hover {
+    background-color: var(--dark-green-color);
+}
