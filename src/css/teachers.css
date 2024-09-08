@@ -1,0 +1,199 @@
+.teachers-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.teachers-header {
+    font-family: var(--primary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.teachers-marker {
+    position: relative;
+}
+
+.teachers-marker::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 29px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    border-radius: 8px;
+    background-color: #BEE8CC;
+    z-index: -1;
+}
+
+.teachers-paragraph {
+    font-family: var(--primary-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 14px;
+    line-height: 1.714;
+    text-align: center;
+    color: #12141780;
+}
+
+.teachers-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    gap: 32px;
+}
+
+.teachers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.teachers-list-item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.teachers-list-item img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.teachers-list-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.teachers-list-header {
+    font-family: var(--primary-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 20px;
+    line-height: 1.142;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin-bottom: 4px;
+}
+
+.teachers-list-paragraph {
+    font-family: var(--primary-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #12141780;
+}
+
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .teachers-card-container {
+        padding: 0 23px;
+    }
+
+    .teachers-header {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+    }
+
+    .teachers-marker::after {
+        top: 30px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 16px;
+    }
+
+    .teachers-list-item img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+    }
+
+    .teachers-paragraph {
+        font-size: 18px;
+        line-height: 1.666;
+        letter-spacing: 0.03em;
+    }
+
+    .teachers-list-container {
+        margin-top: 64px;
+        gap: 32px;
+    }
+
+    .teachers-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 32px;
+    }
+
+    .teachers-list-item {
+        width: 336px;
+        border-radius: 30px;
+    }
+
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .teachers-card-container {
+        margin: 0 96px;
+        padding: 0 87px;
+    }
+
+    .teachers-marker::after {
+        top: 28px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 18px;
+    }
+
+    .teachers-paragraph {
+        letter-spacing: 0.08em;
+    }
+
+    .teachers-list-container {
+        flex-direction: row;
+        margin-top: 64px;
+        padding: 0 64px;
+        gap: 0;
+    }
+
+    .teachers-list {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .teachers-list-item {
+        width: 232px;
+        border-radius: 10px;
+    }
+
+    .teachers-list-item img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+    }
+}
