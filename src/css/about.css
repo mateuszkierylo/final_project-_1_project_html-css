@@ -13,6 +13,7 @@
     line-height: 1.125;
     letter-spacing: -0.02em;
     color: var(--black-color);
+    margin-bottom: 16px;
 }
 
 .about-marker {
