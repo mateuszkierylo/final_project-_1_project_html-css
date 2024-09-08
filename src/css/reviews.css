@@ -1,0 +1,119 @@
+        .review-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+        
+        .review-header {
+            font-family: var(--primary-font-family);
+            font-weight: var(--bold-font-weight);
+            font-size: 40px;
+            line-height: 1.125;
+            letter-spacing: -0.02em;
+            color: var(--black-color);
+            text-align: center;
+        }
+        
+        .review-marker {
+            position: relative;
+        }
+        
+        .review-marker::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 29px;
+            right: -2px;
+            width: 100%;
+            height: 12px;
+            border-radius: 8px;
+            background-color: #BEE8CC;
+            z-index: -1;
+        }
+        
+        .rewiev-header-paragraph {
+            font-family: var(--primary-font-family);
+            font-weight: var(--regular-font-weight);
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #12141780;
+        }
+        
+        .rewiev-list-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 40px;
+            gap: 40px;
+            flex-direction: row;
+        }
+        
+        .rewiev-item-container {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            background-color: var(--gray-color);
+            border-radius: 16px;
+            gap: 32px;
+        }
+        
+        .rewiev-people-container {
+            display: flex;
+            background-color: var(--green-color);
+            border-radius: 16px;
+            color: var(--white-color);
+            align-items: center;
+            padding: 12px;
+        }
+        
+        .rewiev-paragraph {
+            font-size: 16px;
+            text-align: left;
+            line-height: 24px;
+            color: #12141780;
+        }
+        
+        .review-img {
+            border-radius: 50%;
+        }
+        
+        .rewiev-people-container h4 {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        
+        .rewiev-people-container p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        
+        .text-people {
+            padding-left: 8px;
+        }
+        
+        .rewiev-item-container:nth-child(2),
+        .rewiev-item-container:nth-child(3) {
+            display: none;
+        }
+        /* Styles for Tablet devices */
+        
+        @media only screen and (min-width: 768px) {
+            .rewiev-item-container:nth-child(2) {
+                display: flex;
+            }
+        }
+        /* Styles for Destop */
+        
+        .rewiev-item-container:nth-child(2) {}
+        
+        @media only screen and (min-width: 1280px) {
+            .rewiev-item-container:nth-child(2),
+            .rewiev-item-container:nth-child(3) {
+                display: flex;
+            }
+        }
