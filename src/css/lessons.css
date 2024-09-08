@@ -53,7 +53,7 @@ body {
     z-index: -1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
     .lessons-underline::after {
         height: 16px;
     }
@@ -185,8 +185,8 @@ body {
     background-color: var(--dark-green-color);
 }
 
-/* Styles for Desktop devices (min-width: 1024px) */
-@media screen and (min-width: 1024px) {
+/* Styles for Desktop devices (min-width: 1280px) */
+@media screen and (min-width: 1280px) {
     .lessons-pricing-options {
         gap: 40px;
     }
@@ -213,8 +213,8 @@ body {
     }
 }
 
-/* Tablet-specific styles (between 768px and 1024px) */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+/* Tablet-specific styles (between 768px and 1279px) */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
     .lessons-pricing-options {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -294,4 +294,5 @@ body {
         padding: 8px 16px;
         font-size: var(--mobile-button-font-size);
     }
+
 }
