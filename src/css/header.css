@@ -204,11 +204,11 @@
         width: 28px;
         height: 28px;
         fill: var(--black-color);
-    outline: 1px solid #1214171a;
+        outline: 1px solid #1214171a;
         outline-offset: 8px;
         border-radius: 1px;
-    transition: fill var(--transition-general),
-      outline-color var(--transition-general);
+        transition: fill var(--transition-general),
+        outline-color var(--transition-general);
     }
     
     .header-icon:hover,
@@ -220,4 +220,31 @@
     .menu-toggle {
         display: none;
       }
+
+    .navbar { 
+      display: flex;
+        justify-content: space-between;
+        /* Rozkłada elementy po obu stronach */
+        align-items: center;
+        /* Wyrównanie w pionie */
+        width: 100%;
+        /* Kontener zajmuje całą szerokość */
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-beetwen;
+      /* Rozkłada równomiernie elementy menu */
+    flex: 1;
+      /* Menu zajmuje większą część szerokości */
+  }
+
+  .header-social-icons {
+    display: flex;
+    gap: 10px;
+    /* Odstęp między ikonami mediów społecznościowych */
+    margin-left: auto;
+  }
 }
+
+
