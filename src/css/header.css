@@ -220,4 +220,11 @@
     .menu-toggle {
         display: none;
       }
+  
+    .navbar { 
+        width: 1024px;
+        display: flex;
+        gap:184px;
+        margin:auto;
+      }
 }
