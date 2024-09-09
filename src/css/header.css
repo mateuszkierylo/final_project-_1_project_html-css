@@ -217,8 +217,13 @@
     outline-color: #4dc2741a;
     }
 
-    .menu-toggle {
+    .button{
         display: none;
       }
+
+    .navbar {
+        width: 1024px;
+        margin: auto;
+    }
 
 }
